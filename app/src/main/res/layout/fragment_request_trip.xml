@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.TripRequestFragment">
+
+    <RelativeLayout
+
+        android:id="@+id/captain_new_trip_linear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    <TextView
+        android:id="@+id/captain_new_trip_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ليس لديك طلبات رحلات حتي الآن..."
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+
+        />
+    <ProgressBar
+        android:id="@+id/captain_new_trip_load"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/new_trip_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        tools:listitem="@layout/item_new_trip" />
+    </RelativeLayout>
+
+
+</FrameLayout>

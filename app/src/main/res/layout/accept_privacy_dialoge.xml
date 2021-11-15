@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layoutDirection="rtl"
+
+    >
+
+    <LinearLayout
+        android:id="@+id/linear_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="82dp"
+        android:background="@drawable/button_outline"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        >
+
+        <ImageView
+            android:id="@+id/dialog_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="24dp"
+            android:layout_gravity="center"
+            android:src="@drawable/logo"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center"
+            >
+
+            <ImageView
+                android:id="@+id/privacy_dialog"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:src="@drawable/check_mark"
+                />
+            <ImageView
+                android:id="@+id/accept_success"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:src="@drawable/sign_up_done"
+                />
+
+            <!--<TextView
+                android:id="@+id/guest_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="تم التسجيل بناجح"
+                android:layout_gravity="center"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                />-->
+
+        </LinearLayout>
+
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="10dp"
+            >
+
+            <Button
+                android:id="@+id/back_btn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="back"
+                android:background="@drawable/button_outline"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/gray"
+                />
+
+            <Button
+                android:id="@+id/add_guest_btn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="add_patient"
+                android:background="@drawable/button_outline"
+                android:textStyle="bold"
+                android:textColor="@color/gray"
+                />
+
+        </LinearLayout>-->
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="86dp"
+        android:layout_height="86dp"
+        android:src="@drawable/moto"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        />
+
+</RelativeLayout>
+

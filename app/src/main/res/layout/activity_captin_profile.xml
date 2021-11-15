@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/back2"
+    android:layoutDirection="rtl"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/captain_mask"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        android:src="@drawable/rectangle" />
+
+    <TextView
+        android:id="@+id/captain_title"
+        android:layout_width="100dp"
+        android:layout_height="36dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="240dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="50dp"
+        android:text="SALEK"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/captain_edit_pen"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_below="@+id/captain_mask"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="-230dp"
+        android:layout_toStartOf="@+id/captain_image"
+        android:layout_toEndOf="@+id/captain_image"
+        android:src="@drawable/edit_pen" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/captain_image"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:scaleType="centerCrop"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="58dp"
+        android:src="@drawable/captin_mask"
+        app:civ_border_color="@color/colorPrimary"
+        app:civ_border_width="3dp" />
+
+    <Button
+        android:id="@+id/Captain_old_trip_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_below="@+id/captain_mask"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="260dp"
+        android:background="@drawable/buttons"
+        android:paddingStart="18dp"
+        android:paddingEnd="18dp"
+        android:text="رحلاتي"
+        android:fontFamily="@font/hacen_tunisia"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/captain_name_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/captain_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="الكابتن محمود أحمد"
+        android:fontFamily="@font/hacen_tunisia"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/captain_phone_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/captain_name_txt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="+2 0123414977"
+        android:fontFamily="@font/hacen_tunisia"
+        android:textColor="@color/grayDark"
+        android:textDirection="ltr"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <!--<TextView
+        android:id="@+id/captain_id_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/captain_phone_txt"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:text="الرقم القومي: "
+        android:fontFamily="@font/hacen_tunisia"
+        android:textColor="@color/grayDark"
+        android:textSize="18sp"
+        android:textStyle="bold" />-->
+
+
+
+    <TextView
+        android:id="@+id/captain_email_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/captain_phone_txt"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="البريد الإلكتروني: "
+        android:fontFamily="@font/hacen_tunisia"
+        android:textColor="@color/grayDark"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+
+    <TextView
+        android:id="@+id/captain_evaluation_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/captain_email_txt"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="تقييم سالك:"
+        android:textColor="@color/grayDark"
+        android:fontFamily="@font/hacen_tunisia"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+<!--
+    <TextView
+        android:id="@+id/captain_id_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/captain_id_txt"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_toEndOf="@+id/captain_id_txt"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="21234567890123"
+        android:fontFamily="@font/hacen_tunisia"
+        android:textColor="@color/grayDark"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+-->
+
+
+
+    <TextView
+        android:id="@+id/captain_email_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/captain_email_txt"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_toEndOf="@+id/captain_email_txt"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="mahmoudmohamed@gmail.com"
+        android:fontFamily="@font/hacen_tunisia"
+        android:textColor="@color/grayDark"
+        android:textDirection="rtl"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/captain_evaluation_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/captain_evaluation_txt"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@+id/captain_evaluation_txt"
+        android:ellipsize="end"
+        android:gravity="start"
+        android:maxLines="1"
+        android:text="4.1"
+        android:fontFamily="@font/hacen_tunisia"
+        android:textColor="@color/grayDark"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        />
+
+    <ImageView
+        android:id="@+id/captain_evaluation_star"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignTop="@+id/captain_evaluation_data"
+        android:layout_marginEnd="6dp"
+        android:layout_toEndOf="@+id/captain_evaluation_data"
+        android:gravity="start"
+        android:src="@drawable/star"
+        />
+
+    <ImageView
+        android:id="@+id/captain_status_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/captain_status_txt"
+        android:layout_below="@+id/captain_evaluation_txt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="117dp"
+        android:layout_marginBottom="18dp"
+        android:src="@drawable/off" />
+
+    <TextView
+        android:id="@+id/captain_status_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="76dp"
+        tools:text="أنت غير متاح الآن"
+        android:fontFamily="@font/hacen_tunisia"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

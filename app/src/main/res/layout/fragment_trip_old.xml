@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.OldTripFragment">
+
+    <RelativeLayout
+
+        android:id="@+id/captain_old_trip_linear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <TextView
+            android:id="@+id/captain_old_trip_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="لم تقوم بأي رحلات حتي الآن..."
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+
+            />
+        <ProgressBar
+            android:id="@+id/captain_old_trip_load"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/old_trip_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/item_old_trip" />
+    </RelativeLayout>
+
+</FrameLayout>
